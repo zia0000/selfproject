@@ -1,11 +1,30 @@
 import { useState, useEffect } from "react";
 import Research from "./Research";
+import { useNavigate } from "react-router-dom";
+import { initScore } from "store/modules/quiz";
+import { useDispatch, useSelector } from "react-redux";
+
+// export default function Result() {
+//   const navigate = useNavigate();
+
 export default function Main() {
+  const navigate = useNavigate();
+  const scoreInit = (score: number) => {
+    initScore();
+  };
+
+  function handleStart() {
+    navigate("/research");
+  }
+
+  // const init = initScore();
+  // initScore();
   return (
     <>
       <h1>¡GENREME!</h1>
       <div>
-        <button>play</button>
+        <button onClick={() => navigate("/research")}>play</button>
+        <button onClick={() => handleStart()}>newplay</button>
       </div>
       <footer>inspired by spotify</footer>
     </>

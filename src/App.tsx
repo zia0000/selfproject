@@ -6,6 +6,7 @@ import Main from "pages/Main";
 import Research from "pages/Research";
 import Result from "pages/Result";
 import Nav from "components/Nav";
+import Test from "pages/Test";
 
 function App() {
   return (
@@ -16,6 +17,9 @@ function App() {
           <Route path="/" element={<Main />} />
           <Route path="/research" element={<Research />} />
           <Route path="/result" element={<Result />} />
+          <Route path="/test" element={<Test />}>
+            <Route path=":milktea" element={<Test />} />
+          </Route>
         </Routes>
       </BrowserRouter>
     </>

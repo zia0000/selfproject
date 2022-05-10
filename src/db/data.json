@@ -1,0 +1,32 @@
+{
+  "titles": [
+    { "id": 1, "title": "first" },
+    { "id": 2, "title": "second" },
+    { "id": 3, "title": "third" }
+  ],
+  "descriptions": [
+    {
+      "id": 1,
+      "description": "first one is uno"
+    },
+    {
+      "id": 2,
+      "descripton": "first one is dos"
+    },
+    {
+      "id": 3,
+      "description": "thrid one is tres"
+    }
+  ],
+  "imgs": [
+    { "id": 1, "img": "image/dummyone.jpg" },
+    {
+      "id": 2,
+      "img": "image/dummytwo.jpg"
+    },
+    {
+      "id": 3,
+      "img": "image/dummythree.jpg"
+    }
+  ]
+}

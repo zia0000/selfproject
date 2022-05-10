@@ -1,9 +1,15 @@
 import { useState, useEffect } from "react";
+import { Link } from "react-router-dom"; //코딩앙마 js #10 라우터 구현
+import { useNavigate } from "react-router-dom";
+import Answer from "components/Answers";
 
 export default function Result() {
+  const navigate = useNavigate();
+  // if문이 들어가서 점수별로 다 다르게 해야함.
   return (
     <>
-      <span>
+      <Answer />
+      {/* <span>
         <img src="image/resultdummysmall1.jpg"></img>
         <h1>Result 1</h1>
         <p>
@@ -25,17 +31,16 @@ export default function Result() {
           이 봅니다. 하늘에는 가을로 없이 버리었습니다. 하나 덮어 별 이름을
           있습니다.
         </p>
-      </span>
-      <div>
-        <button>공유하기</button>
-      </div>
+      </span> */}
+      <div>공유하기</div>
       <span>
         <button>카톡</button>
         <button>인스타</button>
         <button>트위터</button>
       </span>
       <div>
-        <button>home</button>
+        {/* 공유하기 버튼 말고 글자에 링크 거는 형식 <Link to="/">home</Link> */}
+        <button onClick={() => navigate("/")}>홈으로</button>
       </div>
     </>
   );
