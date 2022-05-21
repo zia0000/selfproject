@@ -5,7 +5,7 @@ import Answer from "components/Answers";
 
 export default function Result() {
   const navigate = useNavigate();
-  // if문이 들어가서 점수별로 다 다르게 해야함.
+  // if문이 들어가서 점수별로 다 다르게 해야함
   return (
     <>
       <Answer />
